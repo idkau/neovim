@@ -38,6 +38,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 nnoremap <F4> :split +terminal<CR>
 nmap <F8> :TagbarToggle<CR>
+nnoremap <F3> :vs<CR>
 
 :set completeopt-=preview " For No Previews
 
@@ -75,4 +76,4 @@ let g:python3_host_prog = '/Users/jason.pearl/.pyenv/versions/3.10.5/bin/python'
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python' shellescap``e%, 1)<CR>

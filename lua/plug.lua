@@ -6,14 +6,14 @@ config = {
 return require('packer').startup(function(use)
     -- insert plugins here
     use {
-        'kyazdani42/nvim-tree.lua',
-        requires = 'kyazdani42/nvim-web-devicons'
+        'nvim-tree/nvim-tree.lua',
+        requires = 'nvim-tree/nvim-web-devicons'
     }
     use { 'mhinz/vim-startify' }
     use { 'DanilaMihailov/beacon.nvim'}
     use {
     'nvim-lualine/lualine.nvim',                     -- statusline
-    requires = {'kyazdani42/nvim-web-devicons',
+    requires = {'nvim-tree/nvim-web-devicons',
                 opt = true}
   }
   use { 'Mofiqul/dracula.nvim' }                     -- colorscheme
@@ -40,4 +40,6 @@ return require('packer').startup(function(use)
   use {'hrsh7th/cmp-path'}
   use {'hrsh7th/cmp-cmdline'}
   use {'hrsh7th/nvim-cmp'}
-end)        
+  use {'hrsh7th/vim-vsnip-integ'}
+  use {'hrsh7th/vim-vsnip'}
+end)

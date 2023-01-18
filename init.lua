@@ -3,7 +3,7 @@
 -- LEADER
 -- These keybindings need to be defined before the first /
 -- is called; otherwise, it will default to "\"
-vim.g.mapleader = ","
+vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
 -- IMPORTS
@@ -25,7 +25,7 @@ local configs = require'nvim-treesitter.configs'
 configs.setup {
 -- ensure_installed = "maintained", -- Only use parsers that are maintained
 highlight = { -- enable highlighting
-  enable = true,
+  enable = false,
 },
 indent = {
   enable = false, -- default is disabled anyways
